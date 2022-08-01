@@ -1,12 +1,15 @@
 package com.example.listofemployees
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listofemployees.databinding.EmployeeItemBinding
 
-class AdapterOfEmployees: RecyclerView.Adapter<AdapterOfEmployees.EmployeesHolder>() {
+
+class AdapterOfEmployees():
+    RecyclerView.Adapter<AdapterOfEmployees.EmployeesHolder>(){
     val employeeList = ArrayList<Employee>()
     class EmployeesHolder(item: View): RecyclerView.ViewHolder(item){
         val binding = EmployeeItemBinding.bind(item)
@@ -29,8 +32,14 @@ class AdapterOfEmployees: RecyclerView.Adapter<AdapterOfEmployees.EmployeesHolde
         return employeeList.size
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun addEmployee(employee: Employee){
         employeeList.add(employee)
         notifyDataSetChanged()
     }
+
+    fun removeEmployee(){
+
+    }
+
 }

@@ -2,5 +2,8 @@
     <string name="app_name">ListOfEmployees</string>
     <string name="me">Логинов Сергей Алексеевич</string>
     <string name="mypost">Гейм дизайнер</string>
+    <string name="name">Имя</string>
+    <string name="post">Должность</string>
+    <string name="add">Добавить</string>
     <string name="todo">TODO</string>
 </resources>
