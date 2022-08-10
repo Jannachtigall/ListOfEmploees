@@ -16,11 +16,18 @@ class EditActivity : AppCompatActivity() {
 
     private fun initButtons() = with(binding){
         bDone.setOnClickListener{
-            val emp = Employee(editName.text.toString(), editPost.text.toString())
+            val emp = Employee(
+                editName.text.toString(),
+                editPost.text.toString(),
+                editDescription.text.toString())
             val editIntent = Intent().apply {
                 putExtra("employee", emp)
             }
             setResult(RESULT_OK, editIntent)
+            finish()
+        }
+        cButton.setOnClickListener{
+            setResult(RESULT_CANCELED)
             finish()
         }
     }

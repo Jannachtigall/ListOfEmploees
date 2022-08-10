@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2225" />
         <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable/ic_add.xml" value="0.2595" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.287" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2225" />
         <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable/ic_more.xml" value="0.2265" />
-        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/layout/activity_edit.xml" value="0.2703125" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable/ic_remove.xml" value="0.287" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/drawable/res_name.xml" value="0.206" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/layout/activity_edit.xml" value="0.4" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/layout/activity_info.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/layout/employee_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/79026/AndroidStudioProjects/ListOfEmployees/app/src/main/res/layout/employee_item.xml" value="0.4" />
       </map>
     </option>
   </component>

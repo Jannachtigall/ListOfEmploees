@@ -6,4 +6,6 @@
     <string name="post">Должность</string>
     <string name="add">Добавить</string>
     <string name="todo">TODO</string>
+    <string name="description">Описание</string>
+    <string name="chooseImage">Выбрать изображение</string>
 </resources>

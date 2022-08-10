@@ -4,5 +4,6 @@ import java.io.Serializable
 
 data class Employee(
     val name: String,
-    val post: String
+    val post: String,
+    val description: String?
 ): Serializable
