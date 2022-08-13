@@ -8,56 +8,48 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.listofemployees.databinding.ActivityMainBinding
-import org.json.JSONException
-import org.json.JSONObject
-import java.io.IOException
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     private val adapter = AdapterOfEmployees(this)
     private var editLauncher: ActivityResultLauncher<Intent>? = null
 
-    private fun jsonDataFromCacheDir() : String{
-
-    }
-
-    private fun jsonDataFromAssert(filename: String) : String {
-        var json = ""
-        try {
-            val inputStream = assets.open(filename)
-            val sizeOfFile = inputStream.available()
-            val bufferData = ByteArray(sizeOfFile)
-            inputStream.read(bufferData)
-            inputStream.close()
-            json = String(bufferData)
-        } catch (e : IOException){
-            e.printStackTrace()
-        }
-        return json
-    }
-
-    private fun parsing()
+//    private fun jsonDataFromAssert(filename: String) : String {
+//        var json = ""
+//        try {
+//            val inputStream = assets.open(filename)
+//            val sizeOfFile = inputStream.available()
+//            val bufferData = ByteArray(sizeOfFile)
+//            inputStream.read(bufferData)
+//            inputStream.close()
+//            json = String(bufferData)
+//        } catch (e : IOException){
+//            e.printStackTrace()
+//        }
+//        return json
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         init()
-
-        try{
-            val jsonObject = JSONObject(jsonDataFromAssert("employees.json"))
-            val jsonArray = jsonObject.getJSONArray("employees")
-            for (i in 0..jsonArray.length()){
-                val employeeData = jsonArray.getJSONObject(i)
-                val name = employeeData.getString("name")
-                val post = employeeData.getString("post")
-                val description = employeeData.getString("description")
-                adapter.addEmployee(Employee(name,post,description))
-            }
-        }catch (e : JSONException){
-            e.printStackTrace()
-        }
-
+//        try{
+//            val jsonObject = JSONObject(jsonDataFromAssert("employees.json"))
+//            val jsonArray = jsonObject.getJSONArray("employees")
+//            for (i in 0..jsonArray.length()){
+//                val employeeData = jsonArray.getJSONObject(i)
+//                val name = employeeData.getString("name")
+//                val post = employeeData.getString("post")
+//                val description = employeeData.getString("description")
+//                adapter.addEmployee(Employee(name,post,description))
+//            }
+//        }catch (e : JSONException){
+//            e.printStackTrace()
+//        }
         editLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
             if (it.resultCode == RESULT_OK){
                 adapter.addEmployee(it.data?.getSerializableExtra("employee") as Employee)
