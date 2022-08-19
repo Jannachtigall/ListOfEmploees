@@ -8,20 +8,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/removeImageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:srcCompat="@drawable/ic_remove"
-        android:padding="6dp"
-        android:layout_marginEnd="12dp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/avatarView"
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -36,13 +23,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:ellipsize="end"
         android:lines="1"
         android:text="@string/me"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@id/removeImageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatarView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -51,20 +39,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
         android:ellipsize="end"
         android:lines="1"
         android:text="@string/mypost"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/removeImageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatarView"
         app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="postTextView,removeImageView"
-        app:barrierDirection="bottom" />
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="postTextView"
+        tools:layout_editor_absoluteY="46dp" />
     
     <Space
         android:layout_width="wrap_content"

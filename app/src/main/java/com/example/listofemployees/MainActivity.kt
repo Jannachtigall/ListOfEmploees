@@ -4,59 +4,65 @@ import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.listofemployees.databinding.ActivityMainBinding
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import java.io.File
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    private val adapter = AdapterOfEmployees(this)
+    private lateinit var adapter : AdapterOfEmployees
     private var editLauncher: ActivityResultLauncher<Intent>? = null
-
-//    private fun jsonDataFromAssert(filename: String) : String {
-//        var json = ""
-//        try {
-//            val inputStream = assets.open(filename)
-//            val sizeOfFile = inputStream.available()
-//            val bufferData = ByteArray(sizeOfFile)
-//            inputStream.read(bufferData)
-//            inputStream.close()
-//            json = String(bufferData)
-//        } catch (e : IOException){
-//            e.printStackTrace()
-//        }
-//        return json
-//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.title = "Моя семья"
+        adapter = AdapterOfEmployees(this)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         init()
-//        try{
-//            val jsonObject = JSONObject(jsonDataFromAssert("employees.json"))
-//            val jsonArray = jsonObject.getJSONArray("employees")
-//            for (i in 0..jsonArray.length()){
-//                val employeeData = jsonArray.getJSONObject(i)
-//                val name = employeeData.getString("name")
-//                val post = employeeData.getString("post")
-//                val description = employeeData.getString("description")
-//                adapter.addEmployee(Employee(name,post,description))
-//            }
-//        }catch (e : JSONException){
-//            e.printStackTrace()
-//        }
         editLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
             if (it.resultCode == RESULT_OK){
                 adapter.addEmployee(it.data?.getSerializableExtra("employee") as Employee)
             }
         }
+
+        val itemTouchHelper = ItemTouchHelper(simpleCallback)
+        itemTouchHelper.attachToRecyclerView(binding.rcView)
     }
 
+    private var simpleCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT){
+        override fun onMove(
+            recyclerView: RecyclerView,
+            viewHolder: RecyclerView.ViewHolder,
+            target: RecyclerView.ViewHolder
+        ): Boolean {
+            return false
+        }
+
+        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+            val position = viewHolder.adapterPosition
+            adapter.removeEmployee(position)
+        }
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.datasort -> adapter.sorting(dateComparator())
+            R.id.surnamesorting -> adapter.sorting(surnameComparator())
+        }
+        return true
+    }
 
     private fun init(){
         binding.apply {

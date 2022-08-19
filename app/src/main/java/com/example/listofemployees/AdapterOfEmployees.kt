@@ -6,27 +6,61 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.listofemployees.databinding.EmployeeItemBinding
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.File
+import java.lang.RuntimeException
+import java.util.*
+import kotlin.Comparator
 
 
 class AdapterOfEmployees(val context: Context):
     RecyclerView.Adapter<AdapterOfEmployees.EmployeesHolder>(){
-    val employeeList = ArrayList<Employee>()//getEmployeesList()
     private val path = "${context.cacheDir}/data.json"
+    val employeeList = getEmployeesList()
 
     class EmployeesHolder(item: View): RecyclerView.ViewHolder(item){
         val binding = EmployeeItemBinding.bind(item)
 
+        @SuppressLint("CheckResult")
         fun bind(employee: Employee, onRemove : (Int) -> Unit) = with(binding){
             nameTextView.text = employee.name
             postTextView.text = employee.post
-            removeImageView.setOnClickListener {
-                onRemove.invoke(position)
+            if (employee.photo.isNotBlank()){
+                Glide.with(itemView.context)
+                    .load(employee.photo)
+                    .skipMemoryCache(true)
+                    .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                    .circleCrop()
+                    .placeholder(R.drawable.ic_person)
+                    .error(R.drawable.ic_person)
+                    .into(avatarView)
+            } else {
+                avatarView.setImageResource(R.drawable.ic_person)
             }
+            object : ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT){
+                override fun onMove(
+                    recyclerView: RecyclerView,
+                    viewHolder: RecyclerView.ViewHolder,
+                    target: RecyclerView.ViewHolder
+                ): Boolean {
+                    TODO("Not yet implemented")
+                }
+
+                override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                    onRemove.invoke(position)
+                }
+
+            }
+//            removeImageView.setOnClickListener {
+//                onRemove.invoke(position)
+//            }
         }
     }
 
@@ -80,13 +114,15 @@ class AdapterOfEmployees(val context: Context):
             inputStream.close() // закрытие входного потока
         }
 
-        val listStudentType = object: TypeToken<List<Employee>>() {}.type // указание, какого типа данные ждать из считанной строки (переменная result)
-        return Gson().fromJson(result, listStudentType) // парсинг массива по указанному типу строки
+        val employees = Gson().fromJson(result, Employees::class.java)
+        return employees.employees // парсинг массива по указанному типу строки
     }
 
     // Метод, который перевод массив в json-строку и проваливается в сохранение новых данных в файл
-    fun saveList(list: List<Employee>) {
-        val result = Gson().toJson(list) // получение данных из массива в виде json-строки
+    fun saveList(list: MutableList<Employee>) {
+        val employees = Employees(list)
+        val result = Gson().toJson(employees)
+
         writeDataToCacheFile(result) // вызов метода, для записи в файл
 //        writeDataToCacheFile(Gson().toJson(list)) // Более короткая реализация
     }
@@ -108,16 +144,29 @@ class AdapterOfEmployees(val context: Context):
 
     // Метод для добавления нового студента
     fun addEmp(emp: Employee) {
-        val studentList = getEmployeesList()
-        studentList.add(emp)
-        saveList(studentList)
+        val employeesList = getEmployeesList()
+        employeesList.add(emp)
+        saveList(employeesList)
     }
 
     // Метод для удаления студента
     fun deleteEmp(emp: Employee) {
-        val studentList = getEmployeesList()
-        studentList.remove(emp)
-        saveList(studentList)
+        val employeesList = getEmployeesList()
+        employeesList.remove(emp)
+        saveList(employeesList)
     }
 
+    @SuppressLint("NotifyDataSetChanged")
+    fun sorting(comparator: Comparator<Employee>){
+        try {
+            val employeesList = getEmployeesList()
+            Collections.sort(employeesList, comparator)
+            Collections.sort(employeeList, comparator)
+            saveList(employeesList)
+            notifyDataSetChanged()
+        } catch (e : RuntimeException){
+            Toast.makeText(context, "Не хватает данных", Toast.LENGTH_SHORT).show()
+            e.printStackTrace()
+        }
+    }
 }

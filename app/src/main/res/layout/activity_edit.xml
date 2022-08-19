@@ -44,7 +44,7 @@
                         android:id="@+id/editName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="5dp"
                         android:ems="10"
                         android:hint="@string/name"
                         android:inputType="textPersonName"
@@ -54,11 +54,20 @@
                         android:id="@+id/editPost"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="5dp"
                         android:ems="10"
                         android:hint="@string/post"
                         android:inputType="textPersonName"
                         android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/editDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:ems="10"
+                        android:hint="@string/birthday"
+                        />
                 </LinearLayout>
             </LinearLayout>
 
@@ -85,20 +94,5 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/cButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@color/orange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_remove"
-        app:tint="@color/white"
-        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

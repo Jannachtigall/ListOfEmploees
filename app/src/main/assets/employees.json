@@ -2,116 +2,162 @@
   {
     "name": "Авдонин Фёдор",
     "post": "Доктор суетологических наук, профессор",
+    "photo": "https://sun9-22.userapi.com/impg/FS4-YTqTm4vAx-2pAGR0YPve82A1dC1ZyHUm2w/iGyXlo1mH4g.jpg?size=720x960&quality=95&sign=99ee0909cb53c027cdff795ecc821430&type=album",
+    "birthday": "30.10.2002",
     "description": "Очень весёлый, добрый и отзывчивый человек, и отличный друг!\nРазбирается в марксизме и прекрасно играет на гитаре!"
   },
   {
     "name": "Балакирев Никита",
     "post": "Научный журналист",
+    "photo": "https://sun9-79.userapi.com/impg/6mIIwMhrcCv9HhtCHZlFUEhJT30jCVOuRVPd3Q/H9QC0-Cq8kc.jpg?size=810x1080&quality=95&sign=92d443ef6bc10ddfd257a8327e02c8d3&type=album",
+    "birthday": "29.10.2002",
     "description": "Мой лучший друг!\nЯ не встречал более доброго и заботливого человека!\nМне тебя не хватает, братик..."
   },
   {
     "name": "Володин Андрей",
     "post": "Куратор нашей группы",
+    "photo": "https://sun9-78.userapi.com/impg/8zT7QnSA1osbg0lxRxaaPOaj2sU41n2sQFO6Dw/8eUfYe9-etw.jpg?size=591x569&quality=95&sign=0c11fa28c541d32649ebb924b9781225&type=album",
+    "birthday": "28.10.2002",
     "description": "Отец."
   },
   {
     "name": "Елхина Виктория",
     "post": "Просто замечательный человек",
+    "photo": "https://sun7-6.userapi.com/impg/_fUMZzjoojQCTeEJDsOYySxTNBOOH2fG5JQbVA/d1AjkghlvEU.jpg?size=1280x1280&quality=96&sign=833f732774b655525d66a54b6bde05dd&type=album",
+    "birthday": "27.10.2002",
     "description": "Невероятно милая, добрая и улыбчивая девушка!\nМы часто помогали друг другу и вместе участвовали в разных мероприятиях!\nСпасибо тебе за твою доброту, Вик!"
   },
   {
     "name": "Игонин Максим",
     "post": "Звукооператор ИСИ",
+    "photo": "https://sun9-66.userapi.com/impg/6TS7XKA-czxN82f2mb-XT6dgO6NujikTdA4ABg/uvqBp0cyQ3U.jpg?size=1280x720&quality=95&sign=9a317c6936f8faf4615d5615fe6bc3cf&type=album",
+    "birthday": "26.10.2002",
     "description": "Наша история любви трагична и полна боли...\nА если серьёзно, то очень умный и весёлый пацанчик!\nВ отличие от меня, сделал в жизни правильный выбор института!"
   },
   {
     "name": "Коруков Дмитрий",
     "post": "Социал-тутовик",
+    "photo": "https://sun9-30.userapi.com/impg/Xc0zwb1xmIq9Eu35EUqbrzj2WYc2KKll9Pe8ww/DRZeAYcepYA.jpg?size=1280x960&quality=95&sign=2eb7b50e48f3070e2ed3a87070580e12&type=album",
+    "birthday": "25.10.2002",
     "description": "Мой лучший друг!\nТаких друзей, как Дима, в мире один на миллиард!\nМне тебя не хватает, братик... "
   },
   {
     "name": "Котлова Виктория",
     "post": "Руководитель сектора по работе с иностранными студентами",
+    "photo": "https://sun7-6.userapi.com/impg/kLD6tKX7cor-KSHrboRDZJyJk5iTJPrt-00iWg/Emn8gLyVleE.jpg?size=1080x1080&quality=95&sign=9915bb521eb8e8fa4bd169a567a0acb6&type=album",
+    "birthday": "24.10.2002",
     "description": "Очень умная, добрая и красивая девушка!\nОчень ответственно подходит к каждому делу!\nСтудсовету очень повезло с Викой!"
   },
   {
     "name": "Кулебакина Ольга",
     "post": "Руководитель интеллектуально-развиващего сектора",
+    "photo": "https://sun9-72.userapi.com/impg/_96s7PfYs5gnKAsYE537Ru9XH449p1SqZzIXfw/qCq90gW-w64.jpg?size=720x1080&quality=95&sign=7cafbad5e63d9f500abd3ce8502cd16f&type=album",
+    "birthday": "23.10.2002",
     "description": "Самая умная, сильная, добрая и весёлая девушка, что я встречал в жизни!\nЛучшая староста, что у меня когда либо была!\nОтличный партнёр по ЧГК, да и вообще по всем мероприятиям, ибо очень умная и ответственная!\nЕсли бы я не совершил самую ужасную ошибку в своей жизни, я бы подарил ей своё сердце!"
   },
   {
     "name": "Ланчин Роман",
     "post": "Просто замечательный человек",
-    "description": "Человек безупречного стиля!"
+    "photo": "https://sun9-68.userapi.com/impg/26GmU9EkytB5lfEU6rqaeBlVDrFMfZCOwSZmyg/rCEdaNdDGjg.jpg?size=908x1080&quality=96&sign=73acf83c1931c24d9d2c2321c5eb529f&type=album",
+    "birthday": "22.10.2002",
+    "description": "Человек безупречного стиля во всём!"
   },
   {
     "name": "Ларина Дарья",
     "post": "Методист СПО \"Крылья\"",
+    "photo": "https://sun9-74.userapi.com/impg/lInLwrnPAD2C7VRZmUbPFhfcevhNHRY0d_HzAA/SeQRkqxVpNo.jpg?size=1280x960&quality=96&sign=59dead4c037f04c88c34aa7905af836b&type=album",
+    "birthday": "21.10.2002",
     "description": "Мама."
   },
   {
     "name": "Логинов Сергей",
     "post": "...",
+    "photo": "...",
+    "birthday": "20.10.2002",
     "description": "глупец..."
   },
   {
     "name": "Названова Яна",
     "post": "Просто замечательный человек",
-    "description": "Очень милая, добрая и невероятно красивая девушка, а также прекрасный друг!\nЯ видел в ней очень большие задаки к бадминтону!\nКто знает, может быть могли бы когда-нибудь и в паре сыграть..."
+    "photo": "https://sun9-64.userapi.com/impg/iLBmLqyajENtd8nL0PvU8C-jHDlI_qbdYTfNbw/os8wHH9nTSc.jpg?size=810x1080&quality=95&sign=10696743d73d7927e527c4736dcc62d8&type=album",
+    "birthday": "19.10.2002",
+    "description": "Очень милая, добрая, душевная и невероятно красивая девушка, а также прекрасный друг!\nЯ видел в ней очень большие задаки к бадминтону!\nКто знает, может быть могли бы когда-нибудь и в паре сыграть...\nСпасибо тебе за твою доброту и заботу, Ян!"
   },
   {
     "name": "Нестеров Илья",
     "post": "Просто замечательный человек",
-    "description": "Человек с золотым сердцем, как поздно я это понял..."
+    "photo": "https://sun9-27.userapi.com/impg/j_07VDDzsmKif7Ssun5e7X0ZjBEbGOoMIG858g/AvfsJ6ZS6bs.jpg?size=715x1080&quality=95&sign=660a118c3fe9c22c7cc1b068688c8aa8&type=album",
+    "birthday": "18.10.2002",
+    "description": "Человек с золотым сердцем!\nЖаль, что я понял это слишком поздно."
   },
   {
     "name": "Осеева Анастасия",
     "post": "Просто замечательный человек",
+    "photo": "https://sun9-21.userapi.com/impg/7T9LnQSs8bslXPjxFlUtjyvgm96i0Nri3zFlZQ/drcgFK7lnQU.jpg?size=811x1080&quality=95&sign=0531ef0fe48074b02cc16e40d2a64d0d&type=album",
+    "birthday": "17.10.2002",
     "description": "Красавица и такая скромняшечка, что мы почти не общались!\nНо всё равно скучаю!"
   },
   {
     "name": "Ошкин Никита",
     "post": "Специалист по истории древнего Рима",
+    "photo": "https://sun9-37.userapi.com/impg/kr2fc5QhYgdcvrWgEP2CmAf3VNpD6Gb8NC3I-w/gJWrsw0ZYDc.jpg?size=1280x853&quality=95&sign=5630b5bad3df7805ec5ae94c1fab3fa6&type=album",
+    "birthday": "16.10.2002",
     "description": "Человек чести и большой скромник!"
   },
   {
     "name": "Рагимова Лейла",
     "post": "Просто замечательный человек",
+    "photo": "https://sun7-13.userapi.com/impg/U3f1Ag1-30z_OReub8qtAcN76GW0KbcFLusS1A/UbHb7sdDwYc.jpg?size=627x1080&quality=95&sign=b30a204e791e904c73921fce0315669c&type=album",
+    "birthday": "15.10.2002",
     "description": "Невероятно добрая и весёлая девушка!\nМой первый клиент, и именно благодаря Лейле раскрутилось моё дело по написанию рецензий за деньги!"
   },
   {
     "name": "Самсонова Маргарита",
-    "post": "Просто замечательный человек",
+    "post": "Спортивный организатор",
+    "photo": "https://sun9-47.userapi.com/impg/dtg_Xt_ZlfiidKwYJlQc5JVPpJmC8JvfJB11SA/VUPxncBoRjA.jpg?size=810x1080&quality=95&sign=b7f9ef3835c7cf7e766bf1b9735c8387&type=album",
+    "birthday": "14.10.2002",
     "description": "Лучший сосед по парте, что у меня был!\nКрасавица, умница, прекрасная спортсменка и отличный спорт орг!"
   },
   {
     "name": "Славкина Регина",
     "post": "Руководитель учебного сектора",
-    "description": "Самая непоседливая девушка, что я встречал в своей жизни!\nМы были ОТЛИЧНОЙ командой на всех мероприятиях!\nКак поздно я начал ценить это..."
+    "photo": "https://sun9-41.userapi.com/impg/TL2beZsX-_O2RhhhnRTZwCh8KJ7O-YVygJyhHw/iE_u980lXXI.jpg?size=811x1080&quality=95&sign=46ab457a3ef9c5903dfd6c538e4d27d4&type=album",
+    "birthday": "13.10.2002",
+    "description": "Самая непоседливая девушка, что я встречал в своей жизни!\nМы были отличной КОМАНДОЙ на всех мероприятиях!\nКак поздно я начал ценить это..."
   },
   {
     "name": "Суродькина Анастасия",
     "post": "Просто замечательный человек",
-    "description": "Умная, усердная и трудолюбивая девушка!\nИчалки рулят!!!"
+    "photo": "https://sun9-78.userapi.com/impg/c856020/v856020711/24fd47/hUbqApzbaFo.jpg?size=719x1080&quality=96&sign=407f8ff8bbe69cdf5926c09bf81741c4&type=album",
+    "birthday": "12.10.2002",
+    "description": "Очень умная, усердная и трудолюбивая девушка.\nАтяшево рулит!!!"
   },
   {
     "name": "Фадеев Евгений",
     "post": "Просто замечательный человек",
-    "description": "Женя сменил много институтов, но остановился именно на ИСИ!\nЗадумайтесь!"
+    "photo": "https://sun7-7.userapi.com/impg/DRXSn-28z71fG62RH3_tw0W1C351t3D8R6hYNA/ARFV67Ns1SQ.jpg?size=810x1080&quality=96&sign=cc2a87243a56926f7c030a81541b7a29&type=album",
+    "birthday": "11.10.2002",
+    "description": "Женя сменил много институтов, но остановился именно на ИСИ.\nЗадумайтесь!"
   },
   {
     "name": "Чекмарёва Анастасия",
     "post": "Просто замечательный человек",
+    "photo": "https://sun9-17.userapi.com/impg/sgchFq_2xLcgblkpOutDWG441CYlW7_Gnswr8Q/knJzIoc-MBg.jpg?size=1280x853&quality=95&sign=b9cf5bb80dad3d14e16bb268e19a54b0&type=album",
+    "birthday": "11.10.2003",
     "description": "Ну очень добрая и светлая девушка! \nСпасибо тебе за твою доброту, Насть!"
   },
   {
     "name": "Шевцов Даниил",
     "post": "Правый вингер",
+    "photo": "https://sun9-8.userapi.com/impg/ON27T2dSeB5XY9RlI5ufHJekDesqZ8o9BEpCmw/ldeoop9cyIE.jpg?size=810x1080&quality=95&sign=777a95dfe154c03133e1f48368884ded&type=album",
+    "birthday": "30.10.2004",
     "description": "Без шуток, самый мудрый человек моего возраста, что я знаю!\nОчень умный и рассудительный парень, всегда ответственно подходит к любому делу, а также всегда рад помочь и поддержать.\nПрекрасный футболист и друг! Мне тебя не хватает, братик..."
   },
   {
     "name": "Шегулова Маргарита",
     "post": "Просто замечательный человек",
+    "photo": "https://sun9-78.userapi.com/impg/xDMRvZkZl95OBxOhZoXBlIVeZwl2FviHKwI44w/grfz3xPsC54.jpg?size=721x1080&quality=95&sign=2b9b9827c9254d2242c1cd797a0abb8f&type=album",
+    "birthday": "30.10.2005",
     "description": "Про Риту невозможно вспоминать без улыбки!\nДобрая, весёлая и активная, затащила нам большую игру на \"100 к одному\".\nНу а наши споры навсегда в моём сердце!)"
   }
 ]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/data_sorting"
+        android:id="@+id/datasort"
+        />
+    <item
+        android:title="@string/surname_sorting"
+        android:id="@+id/surnamesorting"
+        />
+</menu>

@@ -8,4 +8,7 @@
     <string name="todo">TODO</string>
     <string name="description">Описание</string>
     <string name="chooseImage">Выбрать изображение</string>
+    <string name="data_sorting">Сорт. по возрасту</string>
+    <string name="surname_sorting">Сорт. по алфавиту</string>
+    <string name="birthday">Дата рождения</string>
 </resources>
